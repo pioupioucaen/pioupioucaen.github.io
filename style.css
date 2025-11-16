@@ -1,3 +1,18 @@
 body {
-background-color : #feb905;
+    background-color : #feb905;
+}
+
+.blanc {
+    background-color: white;
+}
+
+#logos {
+    width : 100%;
+    display : grid;
+    grid-template-columns : 10% 10%;
+}
+
+img {
+    
+    width : 100%;
 }
