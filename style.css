@@ -1,19 +1,50 @@
 body {
     background-color : #feb905;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .blanc {
     background-color: white;
+    padding: 2px 2px 2px 2px;
 }
 
 #logos {
     width : 100%;
     display : grid;
-    grid-template-columns : 10% 10%;
+    grid-template-columns : 50% 50%;
 }
 
 img {
-    
     width : 100%;
+    height : 100%;
+}
+
+#foot {
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#foot img {
+    width : 90%;
+    display : flex;
+    align-items: center;
+}
+
+hr {
+    border: 2px solid white;
+  border-radius: 5px;
+}
+
+header section {
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display : inline-block;
+    margin-left : 10px;
 }
