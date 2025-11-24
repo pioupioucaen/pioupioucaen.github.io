@@ -25,9 +25,13 @@ img {
 }
 
 #foot img {
-    width : 90%;
+    height : 70%;
+    width : 70%;
     display : flex;
     align-items: center;
+}
+footer {
+    margin-top : 20px;
 }
 
 hr {
@@ -54,8 +58,20 @@ a {
     
 }
 header a {
-    background-color: orangered;
+    background-color: #fb5a48;
+    color : white;
     border-radius : 5px;
     padding : 2px 4px 2px 4px;
     vertical-align: middle;
+}
+
+article {
+    background-color : #ff914d;
+    border-radius : 5px;
+
+    padding-left : 10px;
+    padding-right : 10px;
+    padding-top : 1px;
+    padding-bottom : 1px;
+
 }
