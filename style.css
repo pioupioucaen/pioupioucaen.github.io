@@ -51,6 +51,9 @@ header li {
 a {
     color : inherit;
     text-decoration: none;
+    
+}
+header a {
     background-color: orangered;
     border-radius : 5px;
     padding : 2px 4px 2px 4px;
