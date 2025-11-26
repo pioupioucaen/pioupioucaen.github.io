@@ -15,8 +15,16 @@ body {
 }
 
 img {
-    width : 100%;
-    height : 100%;
+    width : 90%;
+    height : 90%;
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: contain;
+    align-items: center;
+      object-position: top center;
+
+
+
 }
 
 #foot {
@@ -34,36 +42,53 @@ footer {
     margin-top : 20px;
 }
 
-hr {
-    border: 2px solid white;
-  border-radius: 5px;
-}
-
+/*
 header section {
     display : grid;
     grid-template-columns: 1fr 1fr;
+}*/
+/*test*/
+nav ul {
+    list-style-type: none;
 }
 
-header ul {
-    list-style: none;
+nav li {
+    float : left;
 }
 
-header li {
-    display : inline-block;
-    margin-left : 10px;
+nav ul::after {
+    content : "";
+    display : table;
+    clear : both ; 
 }
-a {
-    color : inherit;
+
+nav li {
+    float : left;
+    width : 25%;
+    text-align : center;
+}
+
+nav {
+    width : 100%;
+    margin : 0 auto;
+    position: sticky;
+    top : 0px;
+}
+
+nav a {
+    display : block;
     text-decoration: none;
-    
+    color : black;
+    border-bottom: 5px solid orange;
+    padding : 10px 0px;
 }
-header a {
-    background-color: #fb5a48;
-    color : white;
-    border-radius : 5px;
-    padding : 2px 4px 2px 4px;
-    vertical-align: middle;
+
+nav a:hover {
+    color: orange;
+    border-bottom: 5px solid gold;
 }
+
+
 
 article {
     background-color : #ff914d;
@@ -74,4 +99,46 @@ article {
     padding-top : 1px;
     padding-bottom : 1px;
 
+}
+
+/*************************************************************/
+
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+}
+
+div#slider figure img { width: 20%; height: auto; float: left; max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 2/1;
+  object-fit: contain;}
+
+div#slider { width: 100%; max-width: 1000px; overflow: hidden }
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
 }
