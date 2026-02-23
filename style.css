@@ -1,12 +1,12 @@
 body {
-    background-color : #feb905;
+    background-color : #ffe4c1;
     font-size: 20px;
     width : 98%;
     margin-left: 1%;
     margin-right: 1%;
     color : #262B2B;
 }
-
+/*feb905*/
 header {
   
   margin-top: 1em;
@@ -32,6 +32,8 @@ img {
     object-fit: contain;
     align-items: center;
     object-position: top center;
+        border-radius : 20px;
+
 }
 
 #foot {
