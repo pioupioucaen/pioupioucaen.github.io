@@ -352,3 +352,21 @@ a {
   text-decoration: underline;
   
 }
+
+/* photos scrollable*/
+
+.photo {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom : 1%;
+  margin-top : 1%;
+  border: 5px solid ;
+  border-radius: 2%;
+}
+
+
+.photo p {
+  margin-left: 5%;
+  margin-bottom : 1%;
+  margin-top : 1%;
+}
