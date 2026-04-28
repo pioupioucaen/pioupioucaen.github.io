@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>SC Solidarité Seniors</title>
   <link rel="stylesheet" href="../style.css">
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </head>
 <header>
   <nav>
@@ -48,7 +48,9 @@
         </figure>
         <div class="counter"></div>
     </div>-->
-    <section class="scrollable">
+    <h4 class="deroule" data-target="photos_2025_2026"> ⏷ Photos de l'année 2025-2026</h4>
+  
+    <div id="photos_2025_2026" class="contenu open">
       <section class="photo">
         <p>📍Ouistreham</p>
         <figure>
@@ -86,8 +88,13 @@
         </figure>
         <p>Visite d'Adrien et Laurine</p>
       </section>
-    </section>
+    </div>
+
+  <h4 class="deroule" data-target="photos_2024_2025">▶ Photos de l'année 2024-2025</h4>
+  <div id="photos_2024_2025" class="contenu">...</div>
+    
   </article>
+
 
   <article>
     <h3>Idée d'activité avec un sénior : Création d'une vidéo témoignage</h3>
@@ -102,3 +109,25 @@
   <p>Ce site web a été réalisé par Harmonie BERTUCCI, volontaire en Service Civique Solidarité Séniors (2025/2026).</p>
 </footer>
 </html>
+<script>
+  document.querySelectorAll(".deroule").forEach(button => {
+    button.addEventListener("click", () => {
+        const targetId = button.dataset.target;
+        const contenu = document.getElementById(targetId);
+
+        document.querySelectorAll(".deroule").forEach(e0 => {
+          e0.textContent.replace("▶","⏷");
+        }
+
+        )
+        // Fermer tous
+        document.querySelectorAll(".contenu").forEach(el => {
+            el.classList.remove("open");
+        });
+
+        // Ouvrir celui cliqué
+        contenu.classList.add("open");
+        //button.textContent.replace("⏷","▶");
+    });
+  });
+</script>

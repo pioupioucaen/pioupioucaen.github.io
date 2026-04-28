@@ -85,7 +85,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color : #0130A7 ;
+    background-color : yellow ;
 }
 
 article {
@@ -376,4 +376,15 @@ hr {
   h3{
     color: black;
   }
+}
+
+.contenu {
+  display: none;
+}
+.contenu.open {
+  display: contents; /* ou block selon ton besoin */
+}
+
+.deroule{
+  cursor: pointer;
 }
