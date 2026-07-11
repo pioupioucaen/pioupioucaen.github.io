@@ -20,35 +20,7 @@
   <article>
   <h2>Les visites de convivialité</h2>
     <h3>De jolies photos pour se remémorer des moments de partage</h3>
-    <!--<div class="slideshow">
-        <figure>
-          <a id="1" href="#1">
-            <img loading="lazy" src="../img/visites/2025-2026/IMG_1.jpg" alt="Photo d'une visite">
-          </a>
-        </figure>
-        <figure>
-          <a id="2" href="#2">
-            <img loading="lazy" src="../img/visites/2025-2026/img_2.jpg" alt="Photo d'une visite">
-          </a>
-        </figure>
-        <figure>
-          <a id="3" href="#3">
-            <img loading="lazy" src="../img/visites/2025-2026/IMG_3.jpg" alt="Photo d'une visite">
-          </a>
-        </figure>
-        <figure>
-          <a id="4" href="#4">
-            <img loading="lazy" src="../img/visites/2025-2026/IMG_4.jpg" alt="Photo d'une visite">
-          </a>
-        </figure>
-        <figure>
-          <a id="5" href="#5">
-            <img loading="lazy" src="../img/visites/2025-2026/IMG_5.jpg" alt="Photo d'une visite">
-          </a>
-        </figure>
-        <div class="counter"></div>
-    </div>-->
-    <h4 class="deroule" data-target="photos_2025_2026"> ⏷ Photos de l'année 2025-2026</h4>
+    <h4 class="deroule" data-target="photos_2025_2026"> ▼ Photos de l'année 2025-2026</h4>
   
     <div id="photos_2025_2026" class="contenu open">
       <section class="photo">
@@ -116,7 +88,7 @@
         const contenu = document.getElementById(targetId);
 
         document.querySelectorAll(".deroule").forEach(e0 => {
-          e0.textContent.replace("▶","⏷");
+          e0.textContent = e0.textContent.replace("▶","▼");
         }
 
         )
@@ -127,7 +99,7 @@
 
         // Ouvrir celui cliqué
         contenu.classList.add("open");
-        //button.textContent.replace("⏷","▶");
+        button.textContent = button.textContent.replace("▼","▶");
     });
   });
 </script>
